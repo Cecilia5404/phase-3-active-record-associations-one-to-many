@@ -2,7 +2,7 @@ describe Game do
   let(:game) { Game.first }
 
   before do
-    game = Game.create(title: "Mario Kart", platform: "Switch", genre: "Racing", price: 60)
+    Game.create(title: "Mario Kart", platform: "Switch", genre: "Racing", price: 60)
     Review.create(score: 8, comment: "A classic", game_id: game.id)
     Review.create(score: 10, comment: "Wow what a game", game_id: game.id)
   end
